@@ -1,7 +1,7 @@
 using UnityEngine.InputSystem;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class Shoot : MonoBehaviour
 {
     [SerializeField] float speed;
     Rigidbody2D rb;

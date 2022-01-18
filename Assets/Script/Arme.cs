@@ -19,12 +19,9 @@ public class Arme : MonoBehaviour
     {
         
     }
-    public void Shoot()
+    public void OnShoot(InputValue value)
     {
         Instantiate(BulletPrefab, point.position, point.rotation);
     }
-    void Shoot(InputAction.CallbackContext context)
-    {
-        Shoot();
-    }
+   
 }

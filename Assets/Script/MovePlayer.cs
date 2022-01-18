@@ -18,8 +18,8 @@ public class MovePlayer : MonoBehaviour
      var stick2d = new Vector2(stickdirection.x, stickdirection.y);
      rb.velocity = stick2d * speed;
     }
-    public void OnStickMove(InputAction.CallbackContext context)
+    private void OnMove(InputValue value)
     {
-        stickdirection = context.ReadValue<Vector2>();
+        stickdirection = value.Get<Vector2>();
     }
 }

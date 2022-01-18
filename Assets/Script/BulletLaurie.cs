@@ -1,19 +1,22 @@
-using UnityEngine.InputSystem;
 using UnityEngine;
 
 public class BulletLaurie : MonoBehaviour
 {
-    [SerializeField] float speed;
-    Rigidbody2D rb;
-    public int damage = 40;
-
+    public float speedl = 20f;
+    public Rigidbody2D rbl;
     void Start()
     {
-        rb = this.GetComponent<Rigidbody2D>();
-        rb.velocity = transform.right * speed;
+        rbl.velocity = transform.right * -speedl;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    void Update()
+    //Pour faire dispara?tre le bullet ? partir de distance "pos" 
     {
-        Destroy(gameObject);
+        Vector2 pos = transform.position;
+        pos.x -= speedl * Time.deltaTime;
+        if (pos.x < -11)
+        {
+            Destroy(gameObject);
+        }
+        transform.position = pos;
     }
 }
