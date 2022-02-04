@@ -9,13 +9,15 @@ public class Point : MonoBehaviour
     Vector2 inputValue;
     [SerializeField] GameObject maxiPos;
     [SerializeField] GameObject miniPos;
-    
+    Rigidbody2D rb;
+
 
     private void Start()
     {
         cam = Camera.main;//cam,"camera"mon nom et recuperer dans Camera.main= nom par défaut
         maxPos = cam.ScreenToWorldPoint(new Vector3(cam.pixelWidth, cam.pixelHeight, 10));
         minPos = cam.ScreenToWorldPoint(new Vector3(cam.pixelWidth/2, 0, 10));
+        rb = GetComponent<Rigidbody2D>();
     }
     
     public void OnMove(InputAction.CallbackContext obj)
@@ -26,27 +28,36 @@ public class Point : MonoBehaviour
  
     private void FixedUpdate()
     {
+        var direction = inputValue;
+
         if (transform.position.x >= maxiPos.transform.position.x)// si player2 position superieur ou egale a position maxPos.x = déplacement vers la gauche 
         {
-            float xPos = Mathf.Clamp(inputValue.x, -1 , 0) ;
+            direction.x = Mathf.Clamp(inputValue.x, -1 , 0) ;
             //bloquer position en y 
+            Debug.Log("Verification 1");
         }
 
         if (transform.position.y >= maxiPos.transform.position.y)
         {
-            float yPos = Mathf.Clamp(inputValue.y, -1 , 0);
+            direction.y = Mathf.Clamp(inputValue.y, -1 , 0);
             //boque position en x 
+            Debug.Log("Verification 2");
         }
 
         if (transform.position.x <= miniPos.transform.position.x)
         {
-            float xPos = Mathf.Clamp(inputValue.x, 0, 1);
+            direction.x = Mathf.Clamp(inputValue.x, 0, 1);
+            Debug.Log("Verification 3");
         }
 
         if (transform.position.y <= miniPos.transform.position.y)
         {
-            float yPos = Mathf.Clamp(inputValue.y, 0, 1);
+            direction.y = Mathf.Clamp(inputValue.y, 0, 1);
+            Debug.Log("Verification 4");
         }
+
+        rb.velocity = direction;
+        
     }
 
 
