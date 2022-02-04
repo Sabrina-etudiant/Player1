@@ -127,7 +127,7 @@
                 {
                     "name": "up",
                     "id": "96ad99ca-467c-452a-b830-f1550adaad3c",
-                    "path": "<Keyboard>/w",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -138,7 +138,7 @@
                 {
                     "name": "down",
                     "id": "7f780cff-4b75-4215-ad2d-8d75748f97f4",
-                    "path": "<Keyboard>/a",
+                    "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -149,7 +149,7 @@
                 {
                     "name": "left",
                     "id": "267196dd-56f0-4553-bf4d-9fcb801897ad",
-                    "path": "<Keyboard>/s",
+                    "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -160,7 +160,7 @@
                 {
                     "name": "right",
                     "id": "05202970-efe5-4466-8fc0-894517733c64",
-                    "path": "<Keyboard>/d",
+                    "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -178,6 +178,77 @@
                     "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "PlayerSolo",
+            "id": "00e0851d-9cbf-4a1a-a1df-c62bd24c4b51",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "PassThrough",
+                    "id": "bb306948-88a2-4c39-801c-20fdcb004ad8",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "ZQSD",
+                    "id": "16ccc635-cf46-4fd7-8417-ce76e1908b95",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "74d0a721-0561-4e72-967e-91023e04f986",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "7d82e158-30e0-45a9-9018-0ac03cdbe09e",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "6c0df06b-9994-4eff-984c-3c027f3e4101",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "99fbb2ac-7ba1-45c3-8bdc-b1dc60ac7600",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }

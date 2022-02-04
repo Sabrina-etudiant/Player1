@@ -1,11 +1,11 @@
-using UnityEngine;
+/*using UnityEngine;
 
-/*public class FollowPlayer : MonoBehaviour
+public class FollowPlayer : MonoBehaviour
 {
     public GameObject Player;
     public float speed;
 
-    /*private void Start()
+    private void Start()
     {
       //  Player.activeInHierarchy;// dire que le player spone le logiciel ne sait pas quelle objet suivre
     }

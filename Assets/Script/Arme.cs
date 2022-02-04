@@ -14,14 +14,18 @@ public class Arme : MonoBehaviour
         rb.velocity = transform.right * speed;
     }
 
-    
+
     void Update()
     {
-        
+
     }
-    public void OnShoot(InputValue value)
+    public void Shoot()
     {
         Instantiate(BulletPrefab, point.position, point.rotation);
     }
-   
+    void Shoot(InputAction.CallbackContext context)
+    {
+        Shoot();
+    }
 }
+
