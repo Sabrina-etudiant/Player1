@@ -7,21 +7,27 @@ public class aleatoireSpawner : MonoBehaviour
 {
     public Transform[] spawnPoint;
     public GameObject[] EnnemyTestPrefabTest;
-
+    public float repetition;
+    public float attente;
     void Start()
     {
-        
+        InvokeRepeating("Spawn", attente, repetition);
+    }
+    void Update()
+    {
+      //  InvokeRepeating("Spawn",10, repetition);
     }
 
-    
-    public void Spawn (InputAction.CallbackContext context)
+
+    public void Spawn()
+
     {
-            
-       
+
+        Debug.Log("Spawn");
             int randEnnemy = Random.Range(0, EnnemyTestPrefabTest.Length);
             int randspawnPoint = Random.Range(0, spawnPoint.Length);
 
-            Instantiate(EnnemyTestPrefabTest[0], spawnPoint [randspawnPoint].position , transform.rotation);
+            Instantiate(EnnemyTestPrefabTest[randEnnemy], spawnPoint [randspawnPoint].position , transform.rotation);
         
     }
 }
