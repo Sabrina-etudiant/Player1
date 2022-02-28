@@ -14,10 +14,10 @@ public class Arme : MonoBehaviour
         rb.velocity = transform.right * speed;
     }
 
-    
+
     void Update()
     {
-        
+
     }
     public void Shoot()
     {
@@ -28,3 +28,4 @@ public class Arme : MonoBehaviour
         Shoot();
     }
 }
+
