@@ -251,6 +251,33 @@
                     "isPartOfComposite": true
                 }
             ]
+        },
+        {
+            "name": "Test ",
+            "id": "d5a51f6e-9591-418b-b9d4-23dd6653b31f",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "5072dd29-4af0-4c7f-9b9e-ae4ef4422fab",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "38810ce5-b8f7-455a-80fb-041d5696cea9",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

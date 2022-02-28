@@ -10,6 +10,7 @@ public class Point : MonoBehaviour
     [SerializeField] GameObject maxiPos;
     [SerializeField] GameObject miniPos;
     Rigidbody2D rb;
+    [SerializeField] float speed;
 
 
     private void Start()
@@ -23,41 +24,54 @@ public class Point : MonoBehaviour
     public void OnMove(InputAction.CallbackContext obj)
     {
         inputValue = obj.ReadValue<Vector2>();
-       // inputValue = move;
+        
+        // inputValue = move;
     }
+
  
     private void FixedUpdate()
     {
+       if (!IsOnHorizontalEdge ())//!= fait le contraire false 
+        {
+            inputValue.x = 0;
+        }
+
+        if (!IsVertical())
+        {
+            inputValue.y = 0;
+        }
+
+      
         var direction = inputValue;
-
-        if (transform.position.x >= maxiPos.transform.position.x)// si player2 position superieur ou egale a position maxPos.x = déplacement vers la gauche 
-        {
-            direction.x = Mathf.Clamp(inputValue.x, -1 , 0) ;
-            //bloquer position en y 
-            Debug.Log("Verification 1");
-        }
-
-        if (transform.position.y >= maxiPos.transform.position.y)
-        {
-            direction.y = Mathf.Clamp(inputValue.y, -1 , 0);
-            //boque position en x 
-            Debug.Log("Verification 2");
-        }
-
-        if (transform.position.x <= miniPos.transform.position.x)
-        {
-            direction.x = Mathf.Clamp(inputValue.x, 0, 1);
-            Debug.Log("Verification 3");
-        }
-
-        if (transform.position.y <= miniPos.transform.position.y)
-        {
-            direction.y = Mathf.Clamp(inputValue.y, 0, 1);
-            Debug.Log("Verification 4");
-        }
-
-        rb.velocity = direction;
+        rb.velocity = direction*speed;
         
+    }
+    private bool IsVertical()
+    {
+
+        if (transform.position.x >= maxPos.x)
+            return true;
+        return false;
+
+    }
+
+    private bool IsBotton()
+    {
+        if (transform.position.y <= miniPos.transform.position.y)
+            return true;
+        return false;
+    }
+
+    private bool IsTop()
+    {
+        if (transform.position.y >= maxiPos.transform.position.y)
+            return true;
+        return false;
+    }
+
+    private bool IsOnHorizontalEdge()
+    {
+        return IsBotton() || IsTop();
     }
 
 
@@ -100,4 +114,5 @@ public class Point : MonoBehaviour
  10
 
          }*/
+   
 }
