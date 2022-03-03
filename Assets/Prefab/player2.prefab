@@ -289,13 +289,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a9d6e2009d153648ace7b5e0a976855, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: {fileID: 0}
-  enemyPrefab1: {fileID: 0}
-  enemyPrefab2: {fileID: 0}
-  enemyPrefab3: {fileID: 0}
-  enemyPrefab4: {fileID: 0}
-  explosionPrefab: {fileID: 0}
-  cooldown: 0
+  point: {fileID: 6688449723417896232}
+  enemyPrefab1: {fileID: 5277966949910670093, guid: 01e16193d9c99684396401c9035b6961, type: 3}
+  enemyPrefab2: {fileID: 2466575415044711350, guid: 5ee8dc09d25e019449059dd7ce5be68d, type: 3}
+  enemyPrefab3: {fileID: 4580555578467366486, guid: 337c926e09fc1bb44a059e69d79cf1b2, type: 3}
+  enemyPrefab4: {fileID: 6397700599335899022, guid: 4fcde2d8fdcb81140b2c16b32715bb44, type: 3}
+  explosionPrefab: {fileID: 6046358777698351221, guid: 6ce96b7532d2d814f877a5618da45690, type: 3}
+  cooldown: 3
 --- !u!1001 &795238881197569026
 PrefabInstance:
   m_ObjectHideFlags: 0
