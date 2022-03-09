@@ -7,9 +7,7 @@ public class Leveloader : MonoBehaviour
 {
     public void Level()
     {
-        SceneManager.LoadScene (1);
-
-
+        SceneManager.LoadScene ("GamePlay");
     }
  
 }
