@@ -9,25 +9,24 @@ public class MovePlayer : MonoBehaviour
 
     void Start()
     {
-     rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
 
-    void Update()
+    void FixedUpdate()
     {
-        var stick2d = new Vector2(stickdirection.x, stickdirection.y);
-        rb.velocity = stick2d * speed;
+        rb.velocity = stickdirection * speed;
     }
 
-    public void OnMove(InputAction.CallbackContext context)
+    void OnMove(InputValue context)
     {
-        var move = context.ReadValue<Vector2>();
-        stickdirection = move;
-
+        stickdirection = context.Get<Vector2>();
+        Debug.Log(stickdirection);
     }
+}
     /*
      private void OnMove(InputValue value)
     {
         stickdirection = value.Get<Vector2>();
     }*/
-}
+

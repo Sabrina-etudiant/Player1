@@ -19,7 +19,7 @@ public class SpawnEnemyControl : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    public void Enemy1(InputAction.CallbackContext context)
+    public void OnEnemy1(InputValue context)
     {
         //wait for cooldown (set time) to end
         if (Time.time - lastShoot < cooldown)
@@ -27,7 +27,7 @@ public class SpawnEnemyControl : MonoBehaviour
         lastShoot = Time.time;
         Instantiate(enemyPrefab1, point.position, point.rotation);
     }
-    public void Enemy2(InputAction.CallbackContext context)
+    public void OnEnemy2(InputValue context)
     {
         //wait for cooldown (set time) to end
         if (Time.time - lastShoot < cooldown)
@@ -35,7 +35,7 @@ public class SpawnEnemyControl : MonoBehaviour
         lastShoot = Time.time;
         Instantiate(enemyPrefab2, point.position, point.rotation);
     }
-    public void Enemy3(InputAction.CallbackContext context)
+    public void OnEnemy3(InputValue context)
     {
         //wait for cooldown (set time) to end
         if (Time.time - lastShoot < cooldown)
@@ -43,7 +43,7 @@ public class SpawnEnemyControl : MonoBehaviour
         lastShoot = Time.time;
         Instantiate(enemyPrefab3, point.position, point.rotation);
     }
-    public void Enemy4(InputAction.CallbackContext context)
+    public void OnEnemy4(InputValue context)
     {
         //wait for cooldown (set time) to end
         if (Time.time - lastShoot < cooldown)
@@ -51,7 +51,7 @@ public class SpawnEnemyControl : MonoBehaviour
         lastShoot = Time.time;
         Instantiate(enemyPrefab4, point.position, point.rotation);
     }
-    public void DogCapacity(InputAction.CallbackContext context)
+    public void OnDogCapacity(InputValue context)
     {
         //Appeler le script
 
