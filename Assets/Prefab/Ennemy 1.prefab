@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1538733531343696852}
   - component: {fileID: 596493621}
   m_Layer: 7
-  m_Name: Ennemy
+  m_Name: Ennemy 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -184,7 +184,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2466575415044711350}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: 668d9524e3d4d8f4299d2c037a44c433, type: 2}
   m_Animations:
