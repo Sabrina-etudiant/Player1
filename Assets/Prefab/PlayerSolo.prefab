@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2236616336611006014}
   - component: {fileID: 2236616336611005953}
   - component: {fileID: 1141251645032599765}
+  - component: {fileID: 4717733936856082036}
   m_Layer: 6
   m_Name: PlayerSolo
   m_TagString: Untagged
@@ -232,11 +233,47 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: bb306948-88a2-4c39-801c-20fdcb004ad8
     m_ActionName: PlayerSolo/New action[/Keyboard/w,/Keyboard/a,/Keyboard/s,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 96a6aab8-6654-435a-b1ba-7c56882190df
+    m_ActionName: player2/Chien[/Keyboard/numpad1]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 79636827-b292-4ad1-94c1-53997fd81139
+    m_ActionName: player2/Ennemi1[/Keyboard/numpad2]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6d3cdb91-24c4-4a97-beaa-03cc7f5d86fe
+    m_ActionName: player2/Geant[/Keyboard/numpad3]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 789cbbcb-52cd-4593-90d4-9b02fa157f07
+    m_ActionName: player2/Serpent[/Keyboard/numpad4]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b08dedb6-fd95-4883-82f6-f1f4d0573718
+    m_ActionName: player2/Explosion[/Keyboard/numpad5]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5072dd29-4af0-4c7f-9b9e-ae4ef4422fab
+    m_ActionName: Test /New action[/Keyboard/leftArrow]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &4717733936856082036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2236616336611005955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7775eb85ae88ae449a6fb9d1ff04d312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2330392068734838560
 PrefabInstance:
   m_ObjectHideFlags: 0

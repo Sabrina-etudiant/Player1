@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 2105516903585384244}
   - component: {fileID: 8515122892432546378}
   - component: {fileID: 8515122892432546390}
-  - component: {fileID: 8515122892432546388}
   - component: {fileID: 6325734378176677847}
+  - component: {fileID: 5673041335951313290}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Untagged
@@ -149,152 +149,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8515122892432546388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2335152386682264205}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 3c673297ec47ff441b5ac00354b5cdb5, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 455d6f6d-a289-4d11-bd1a-fca1cfb5ba50
-    m_ActionName: Player/Move[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 2f37606f-32f2-4328-bf14-d48dd7b7e0c9
-    m_ActionName: Player/Shoot[/Keyboard/space]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2105516903585384244}
-        m_TargetAssemblyTypeName: Point, Assembly-CSharp
-        m_MethodName: OnMove
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 9ef6e4bf-c804-4ce6-99d1-a6f6f2cb2bba
-    m_ActionName: player2/New action[/Keyboard/w,/Keyboard/a,/Keyboard/s,/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: f6a0e8f6-1fde-4871-91e9-e0c277d5ece1
-    m_ActionName: player2/Shoot[/Keyboard/space]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: bb306948-88a2-4c39-801c-20fdcb004ad8
-    m_ActionName: PlayerSolo/New action[/Keyboard/w,/Keyboard/a,/Keyboard/s,/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 5072dd29-4af0-4c7f-9b9e-ae4ef4422fab
-    m_ActionName: Test /New action[/Keyboard/leftArrow]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6325734378176677847}
-        m_TargetAssemblyTypeName: SpawnEnemyControl, Assembly-CSharp
-        m_MethodName: Enemy1
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 96a6aab8-6654-435a-b1ba-7c56882190df
-    m_ActionName: player2/Chien[/Keyboard/numpad1]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6325734378176677847}
-        m_TargetAssemblyTypeName: SpawnEnemyControl, Assembly-CSharp
-        m_MethodName: Enemy2
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 79636827-b292-4ad1-94c1-53997fd81139
-    m_ActionName: player2/Ennemi1[/Keyboard/numpad2]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6325734378176677847}
-        m_TargetAssemblyTypeName: SpawnEnemyControl, Assembly-CSharp
-        m_MethodName: Enemy3
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 6d3cdb91-24c4-4a97-beaa-03cc7f5d86fe
-    m_ActionName: player2/Geant[/Keyboard/numpad3]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6325734378176677847}
-        m_TargetAssemblyTypeName: SpawnEnemyControl, Assembly-CSharp
-        m_MethodName: Enemy4
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 789cbbcb-52cd-4593-90d4-9b02fa157f07
-    m_ActionName: player2/Serpent[/Keyboard/numpad4]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6325734378176677847}
-        m_TargetAssemblyTypeName: SpawnEnemyControl, Assembly-CSharp
-        m_MethodName: DogCapacity
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: b08dedb6-fd95-4883-82f6-f1f4d0573718
-    m_ActionName: player2/Explosion[/Keyboard/numpad5]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: player2
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!114 &6325734378176677847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,6 +168,18 @@ MonoBehaviour:
   enemyPrefab4: {fileID: 6397700599335899022, guid: 4fcde2d8fdcb81140b2c16b32715bb44, type: 3}
   explosionPrefab: {fileID: 6046358777698351221, guid: 6ce96b7532d2d814f877a5618da45690, type: 3}
   cooldown: 3
+--- !u!114 &5673041335951313290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2335152386682264205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a953049be196a94bb9a9bb870cc5e50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &9016921871063103323
 PrefabInstance:
   m_ObjectHideFlags: 0
