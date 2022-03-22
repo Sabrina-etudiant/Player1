@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Rules : MonoBehaviour
 {
-    public void option()
+    public void rules()
     {
         SceneManager.LoadScene("Rules");
     }
